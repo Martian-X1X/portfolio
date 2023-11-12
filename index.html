@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="icon" href="imgs/logo.png" type="image/png">
+    <link rel="stylesheet" type="text/css" href="css/style2.css">
+</head>
+<body>
+
+<script>
+    fetch('includes/header.html')
+        .then(response => response.text())
+        .then(html => {
+            document.querySelector('body').insertAdjacentHTML('afterbegin', html);
+        });
+</script>
+
+<!-- Header with Background Image -->
+<header style="background-image: url('imgs/Welcome.gif'); background-size: cover; background-position: center; height: 500px;">
+    <div class="container h-100">
+        <div class="row h-100 align-items-center">
+            <div class="col-md-6 text-center custom-text-color ">
+                <h1 style="font-size: 4.5rem;">Matin's VirtualWorld</h1>
+                <p class="custom-p">Your source for amazing Discoveries.<br> Dive into My Endless world of imagination.</p>
+            </div>
+            <div class="col-md-6 d-flex justify-content-center align-items-center ">
+                <img src="imgs/Me.png" alt="Your Image" class="img-fluid " width="350" height="350">
+            </div>
+        </div>
+    </div>
+</header>
+
+
+<!-- Gallery Section -->
+<section id="gallery" class="py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 mb-4">
+                <div class="card fixed-card-size" style="background-color: #FFD2AD;">
+                    <img src="imgs/code.jpg" class="card-img-top" alt="Image 1" height="300px">
+                    <div class="card-body">
+                        <h5 class="card-title">Software-Developer</h5>
+                        <p class="card-text">As a beginner software developer, I am proficient in languages such as Java, Python, C++, and PHP, and I am familiar with various frameworks and tools such as React, Node.js, and Git. I enjoy collaborating with others to build robust, user-friendly applications that solve real-world problems.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 mb-4">
+                <div class="card fixed-card-size" style="background-color: #FFD2AD;">
+                    <img src="imgs/design.jpg" class="card-img-top" alt="Image 2" height="300px">
+                    <div class="card-body">
+                        <h5 class="card-title">Graphics Design</h5>
+                        <p class="card-text">As a graphic designer, I have experience creating designs for print and digital media, including logos, posters, websites, and social media content. I am skilled in using Adobe Creative Suite and have an eye for detail and a strong sense of aesthetics.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Footer Section -->
+    <script>
+    fetch('includes/footer.html')
+        .then(response => response.text())
+        .then(html => {
+            document.querySelector('body').insertAdjacentHTML('beforeend', html);
+        });
+</script>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="icon" href="imgs/logo.png" type="image/png">
+    <link rel="stylesheet" type="text/css" href="css/style2.css">
+</head>
+<body>
+
+    <script>
+    fetch('includes/header.html')
+        .then(response => response.text())
+        .then(html => {
+            document.querySelector('body').insertAdjacentHTML('afterbegin', html);
+        });
+</script>
+
+
+<!-- First Section: Greeting with Image -->
+<section class="container-fluid py-5">
+    <div class="row align-items-center">
+        <div class="col-md-6 text-center">
+            <!-- Adjust the 'img-fluid' class to control the size of the image -->
+            <img src="imgs/3.jpg" class="img-fluid rounded-circle" alt="Your Image" style="max-width: 200px;">
+        </div>
+        <div class="col-md-6 text-center text-md-start">
+            <h1 style="color: #FF5733; font-weight: bold;">Hello, I'm Abdullah Matin</h1>
+            <p style="color: #FFF5AD;">Welcome to my page. I am a passionate software developer, crafting digital solutions and turning innovative ideas into reality through code</p>
+        </div>
+    </div>
+</section>
+
+
+<!-- Second Section: Cards Carousel -->
+<section class="container-fluid bg-black py-5">
+    <div class="col-md-6 text-center text-md-start">
+      <h1 style="color: #FF5733; font-weight: bold;">Experiences</h1>
+    </div>
+    <div class="container">
+      <div id="cardCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <!-- Carousel Item 1 -->
+          <div class="carousel-item active">
+            <div class="row">
+              <!-- Card 1 -->
+              <div class="col-md-6">
+                <div class="card" style="height: 350px;">
+                  <img src="imgs/soc.jpg" class="card-img-top" alt="Card 1 Image" style="max-height: 200px;" >
+                  <div class="card-body">
+                    <h5 class="card-title">Sociology Club</h5>
+                    <p class="card-text">Joint Secretary 2021-2022<br>Executive Member 2019-2020</p>
+                  </div>
+                </div>
+              </div>
+              <!-- Card 2 -->
+              <div class="col-md-6">
+                <div class="card" style="height: 350px;">
+                  <img src="imgs/design.jpg" class="card-img-top" alt="Card 2 Image" style="max-height: 200px;">
+                  <div class="card-body">
+                    <h5 class="card-title">Graphic Design</h5>
+                    <p class="card-text">Freelance Graphic designer</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Carousel Item 2 -->
+          <div class="carousel-item">
+            <div class="row">
+              <!-- Card 3 -->
+              <div class="col-md-6">
+                <div class="card" style="height: 350px;">
+                  
+                  <img src="imgs/DBMS.png" class="card-img-top" alt="Card 3 Image" style="max-height: 200px;">
+                  <div class="card-body">
+                    <h5 class="card-title">Database Management</h5>
+                    <p class="card-text">project based on Database Management</p>
+                  </div>
+                </div>
+              </div>
+              <!-- Card 4 -->
+              <div class="col-md-6">
+                <div class="card" style="height: 350px;">
+                  <!-- Adjust max-height to control the size of the card image -->
+                  <img src="imgs/shop.jpg" class="card-img-top" alt="Card 4 Image" style="max-height: 200px;">
+                  <div class="card-body">
+                    <h5 class="card-title">Software Development</h5>
+                    <p class="card-text">E-commerce Software Development</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Add more carousel items as needed -->
+        </div>
+        <button class="carousel-control-prev" type="button" data-target="#cardCarousel" data-slide="prev">
+           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+           <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-target="#cardCarousel" data-slide="next">
+           <span class="carousel-control-next-icon" aria-hidden="true"></span>
+           <span class="visually-hidden">Next</span>
+        </button>
+
+      </div>
+    </div>
+  </section>
+
+
+<!-- Vertical Timeline Section -->
+<section class="container-fluid py-5">
+    <div class="container">
+      <ul class="timeline">
+        <li class="timeline-item">
+          <img src="imgs/edex.png" alt="2015">
+          <div class="timeline-item-content">
+            <h5 class="text-white">2015</h5>
+            <p class="text-white">Completed O-Levels</p>
+          </div>
+        </li>
+
+        <li class="timeline-item">
+          <img src="imgs/free.jpg" alt="2019">
+          <div class="timeline-item-content">
+            <h5 class="text-white">2017</h5>
+            <p class="text-white">Freelancing on Graphic Designing</p>
+          </div>
+        </li>
+
+        <li class="timeline-item">
+          <img src="imgs/edex.png" alt="2019">
+          <div class="timeline-item-content">
+            <h5 class="text-white">2019</h5>
+            <p class="text-white">Completed A-Levels</p>
+          </div>
+        </li>
+
+        <li class="timeline-item">
+          <img src="imgs/IUB.jpg" alt="2019">
+          <div class="timeline-item-content">
+            <h5 class="text-white">2019</h5>
+            <p class="text-white">Joined Independent University, Bangladesh</p>
+          </div>
+        </li>
+        
+        <!-- Add more items as needed -->
+      </ul>
+    </div>
+  </section>
+
+
+<!-- Include Bootstrap JS and dependencies -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+
+<!-- Footer Section -->
+<script>
+    fetch('includes/footer.html')
+        .then(response => response.text())
+        .then(html => {
+            document.querySelector('body').insertAdjacentHTML('beforeend', html);
+        });
+</script>
+</body>
+</html>

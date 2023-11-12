@@ -1,0 +1,132 @@
+body {
+  background: black;
+}
+
+.logo {
+  width: 100px;
+  height: 50px;
+
+}
+
+
+.navbar-nav .nav-link {
+        color: #FFA500; /* Yellowish-Orange color */
+        font-weight: bold;
+    }
+
+    .navbar-nav .nav-link:hover {
+        color: #FFD700; /* Lighter shade on hover */
+    }
+
+    .navbar-nav .btn-outline-light {
+        color: #FFA500; /* Yellowish-Orange color */
+        border-color: #FFA500; /* Yellowish-Orange color */
+    }
+
+    .navbar-nav .btn-outline-light:hover {
+        color: #FFFFFF; /* White color on hover */
+        background-color: #FFA500; /* Yellowish-Orange color on hover */
+        border-color: #FFA500; /* Yellowish-Orange color on hover */
+    }
+
+
+    .navbar-toggler-icon {
+      background-color: #ff9933;
+    }
+
+    /* Optional: Adjusting the navbar brand text color */
+    .navbar-brand {
+      color: #ff9933;
+    }
+
+    
+
+
+
+ .centered-button
+  {
+    text-align: center;
+  }
+
+  .image-container
+   {
+            padding-top: 30px; 
+   }
+
+  .rounded-container {
+        border-radius: 50%;
+    }
+
+   @media (max-width: 767px) {
+        /* Adjust styles for smaller screens */
+        .custom-text-color {
+            margin-bottom: 20px; /* Add margin to the text container */
+        }
+
+        .img-fluid {
+            margin-top: 20px; /* Add margin to the image container */
+
+        }
+    }
+
+   .custom-text-color
+   {
+    color: orange;
+   }
+.custom-p
+{
+  color: whitesmoke;
+}
+.fixed-card-size {
+        height: 550px;
+    }
+
+
+.custom-footer {
+            background-color: #ff6600 !important; /* Orange background color for the footer */
+            color: black !important; /* Black text color for the footer */
+            font-weight: bold;
+        }
+
+  / .timeline {
+      list-style: none;
+      padding: 0;
+      margin: 50px 0;
+    }
+
+    .timeline-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      border: 2px solid #fca13f;
+      border-radius: 5px;
+      margin-bottom: 20px;
+    }
+
+    .timeline-item img {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      border: 2px solid #ffbe7d;
+    }
+
+    .timeline-item-content {
+      flex: 1;
+      margin-left: 20px;
+    }
+
+    .text-white {
+      color: #fff;
+    }
+
+
+ .fade-in {
+            opacity: 0;
+            transform: translateY(20vh);
+            transition: opacity 0.8s, transform 0.8s;
+        }
+        .fade-in.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
